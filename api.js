@@ -141,7 +141,7 @@ async function search() {
                    .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k]))
                    .join('&');
       
-      let url = 'http://127.0.0.1:8000/books/search?' + query;
+      let url = 'http://127.0.0.1:8000/books/home/' + query;
       
     fetch(url)
     .then(data => data.json())
